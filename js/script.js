@@ -32,7 +32,6 @@ generateBtn.addEventListener("click", function (e) {
   const randomNum = Math.floor(Math.random() * numImages + 1)
     .toString()
     .padStart(2, 0);
-  console.log(randomNum);
   image.style.backgroundImage = `url("../img/meme-image-${randomNum}.png")`;
 });
 
