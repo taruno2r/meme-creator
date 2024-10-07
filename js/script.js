@@ -32,6 +32,15 @@ inputTextTop.addEventListener("input", function () {
   MemeTextTop.textContent = inputTextTop.value;
 });
 
-inputTextBottom.addEventListener("input", function () {
+inputTextBottom.addEventListener("input", function (e) {
   MemeTextBottom.textContent = inputTextBottom.value;
+});
+
+// Avoiding Image Generation on Enter Key
+inputTextTop.addEventListener("keydown", function (e) {
+  if (e.key === "Enter") e.preventDefault();
+});
+
+inputTextBottom.addEventListener("keydown", function (e) {
+  if (e.key === "Enter") e.preventDefault();
 });
