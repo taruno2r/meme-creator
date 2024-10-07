@@ -14,6 +14,15 @@ const inputTextBottom = document.querySelector(".input-field-text-2");
 const MemeTextBottom = document.querySelector(".meme-text-2");
 
 ////////////////////////////////////
+// Initialisation
+////////////////////////////////////
+
+const startImageNum = Math.floor(Math.random() * numImages + 1)
+  .toString()
+  .padStart(2, 0);
+image.style.backgroundImage = `url("../img/meme-image-${startImageNum}.png")`;
+
+////////////////////////////////////
 // EVENT LISTENERS
 ////////////////////////////////////
 
