@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meme Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/script.js"></script>
+  </head>
+  <body>
+    <section class="container">
+      <h1 class="h1">Meme Generator</h1>
+      <form class="form">
+        <div class="input-container">
+          <label for="text-1" class="input-label">Text at the top</label>
+          <input
+            type="text"
+            id="text-1"
+            class="input-field input-field-text-1"
+          />
+        </div>
+        <div class="input-container">
+          <label for="text-2" class="input-label">Text at the bottom</label>
+          <input
+            type="text"
+            id="text-2"
+            class="input-field input-field-text-2"
+          />
+        </div>
+        <div class="image">
+          <p class="meme-text meme-text-1"></p>
+          <p class="meme-text meme-text-2"></p>
+        </div>
+        <button class="button-generate-meme">🌄 Generate New Image</button>
+      </form>
+    </section>
+  </body>
+</html>
